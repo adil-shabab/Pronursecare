@@ -63,6 +63,15 @@
                             </nav>
                         </div>
                     </div>
+
+                    <div class="d-md-none d-block col-6 text-right">
+                        <div class="hamburger-menu d-lg-block d-xl-none">
+                            <a href="javascript:void(0);">
+                                <i class="far fa-bars"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,50 +116,11 @@
         <!-- side-mobile-menu start -->
         <nav class="side-mobile-menu">
             <ul id="mobile-menu-active">
-                <li class="has-dropdown">
-                    <a href="index.html">Home</a>
-                    <ul class="sub-menu">
-                        <li><a href="index.html">Home Style 1</a></li>
-                        <li><a href="index-2.html">Home Style 2</a></li>
-                        <li><a href="index-3.html">Home Style 3</a></li>
-                    </ul>
-                </li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li class="has-dropdown">
-                    <a href="#">Services</a>
-                    <ul class="sub-menu">
-                        <li><a href="services-one.html">Services Style 1</a></li>
-                        <li><a href="services-two.html">Service Style 2</a></li>
-                        <li><a href="services-details.html">Services details</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown"><a href="#">Project</a>
-                    <ul class="submenu">
-                        <li><a href="project-grid.html">Project Grid</a></li>
-                        <li><a href="project-full.html">Project Full</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown"><a href="#">Blogs</a>
-                    <ul class="submenu">
-                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                        <li><a href="blog-standard.html">Blog Standard</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    <a href="#">Pages</a>
-                    <ul class="sub-menu">
-                        <li><a href="stories-one.html">Stories One</a></li>
-                        <li><a href="stories-details.html">Stories Details</a></li>
-                        <li><a href="events-grid.html">Events Grid</a></li>
-                        <li><a href="events-list.html">Events List</a></li>
-                        <li><a href="events-details.html">Events Details</a></li>
-                        <li><a href="volunteer.html">Volunteer</a></li>
-                        <li><a href="donation-list.html">Donation List</a></li>
-                        <li><a href="donation-single.html">Donation Single</a></li>
-                        <li><a href="faq.html">Faq</a></li>
-                    </ul>
-                </li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                
                 <li><a href="contact.html">Contacts Us</a></li>
             </ul>
         </nav>
@@ -161,7 +131,7 @@
 
     <main>
         <!--slider-area start-->
-        <div class="slider____section">
+        <div class="slider____section desktop d-md-flex d-none">
             <div class="container h__100" style="z-index: 111;">
                 <div class="row h__100">
                     <div class="col-md-10 h__100">
@@ -177,6 +147,27 @@
             </div>
         </div>
         <!--brand-area start-->
+
+        <!--slider-area start-->
+        <div class="slider____section mobile d-md-none d-flex">
+            <div class="container h__100" style="z-index: 111;">
+                <div class="row h__100">
+                    <div class="col-md-10 h__100">
+                        <div class="txt_content">
+                            <h1>Compassionate Nursing Solutions</h1>
+                            <h1>Providing Quality Care, Every Day</h1>
+                            <a href="#" class="theme_btn theme_btn2">Learn More <i class="fal fa-long-arrow-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+        <!--brand-area start-->
+
+
+
         <section class="brand-area">
             <div class="container">
                 <div class="row brand-active brand-border-02 pt-5">
@@ -244,7 +235,7 @@
 
 
         <!--about-company-area start-->
-        <section class="about-company-area about-area-02 pt-80 pb-50">
+        <section class="about-company-area about-area-02 pt-60 pb-50">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12">
@@ -252,7 +243,7 @@
                             <div class="about-pair-img" data-tilt data-tilt-max="3">
                                 <img src="assets/img/about/about3.jpg" alt="">
                             </div>
-                            <div class="about-author mb-30">
+                            <!-- <div class="about-author mb-30">
                                 <div class="author-coment white-bg">
                                     <p>Sed ut perspicias unde omnis iste natus error sit voluptate accusantium emque laudantium totam rem aperiam eaque ipsa quae inventore</p>
                                     <div class="author author-02 d-flex align-items-center mt-25">
@@ -265,7 +256,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-12">
@@ -275,7 +266,7 @@
                                 <h2 class="text-anime-style">Welcome to Pro Nurse Care: Connecting Nurses & Healthcare</h2>
                             </div>
                             <div class="about-text d-sm-flex align-items-center mb-25">
-                                <div class="about-text__letter">
+                                <div class="mb-4 mb-md-0 about-text__letter">
                                     <h1><span>10</span></h1>    
                                     <p>Years of Excellence</p>    
                                 </div>
@@ -294,7 +285,7 @@
 
 
         <!--we-do-area start-->
-        <section class="we-do-area pt-25 pb-60">
+        <section class="we-do-area pt-25 pb-30">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 offset-xl-2">
@@ -421,7 +412,7 @@
 
 
         <!--faq-area start-->
-        <section class="faq-area pt-125 pb-120">
+        <section class="faq-area pt-25 pb-120">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 offset-xl-2">
@@ -596,9 +587,7 @@
                             </div>
                             <div class="blog__content grey-bg3">
                                 <span class="blog-date">25 Dec 2020</span>
-                                <h6 class="blog-title"><a href="blog-details.html">Happyness Main Smashing Podcast Episode From
-                                        With Marcy Sutton Gatsby Service Crowdfunding Web
-                                        Platform Features With Open Prioritization</a></h6>
+                                <h6 class="blog-title"><a href="blog-details.html">How Pro Nurse Care Is Revolutionizing Healthcare Staffing by Streamlining the Process of Connecting Skilled Nurses with Hospitals in Need of Professionals</a></h6>
                             </div>
                         </div>
                     </div>
@@ -612,9 +601,7 @@
                             </div>
                             <div class="blog__content grey-bg3">
                                 <span class="blog-date">25 Dec 2020</span>
-                                <h6 class="blog-title"><a href="blog-details.html">Standing Client-Side
-                                        Graph With Apos Was
-                                        Client React</a></h6>
+                                <h6 class="blog-title"><a href="blog-details.html">Tips to Build a Strong Nursing Profile on Pro Nurse Care Platform</a></h6>
                             </div>
                         </div>
                     </div>
@@ -628,9 +615,7 @@
                             </div>
                             <div class="blog__content grey-bg3">
                                 <span class="blog-date">25 Dec 2020</span>
-                                <h6 class="blog-title"><a href="blog-details.html">How Create Custom
-                                        React Hook Fetch And
-                                        Cache Data Goals</a></h6>
+                                <h6 class="blog-title"><a href="blog-details.html">Why Pro Nurse Care is Trusted by Healthcare Facilities Nationwide</a></h6>
                             </div>
                         </div>
                     </div>
@@ -710,7 +695,7 @@
                                     <img src="assets/img/blog/post1.jpg" alt="">
                                 </div>
                                 <div class="post__text">
-                                    <p class="recent-title"><a href="blog-details.html">How To Create A Custom React Hook To Fetch</a>
+                                    <p class="recent-title"><a href="blog-details.html">The Future of Healthcare Staffing with Pro Nurse Care Solutions</a>
                                     </p>
                                     <span><i class="far fa-calendar-alt"></i> 25 DEC 2024</span>
                                 </div>
@@ -720,7 +705,7 @@
                                     <img src="assets/img/blog/post2.jpg" alt="">
                                 </div>
                                 <div class="post__text">
-                                    <p class="recent-title"><a href="blog-details.html">How To Create A Custom React Hook To Fetch</a>
+                                    <p class="recent-title"><a href="blog-details.html">Why Pro Nurse Care is Trusted by Healthcare Facilities Nationwide</a>
                                     </p>
                                     <span><i class="far fa-calendar-alt"></i> 25 DEC 2024</span>
                                 </div>
@@ -730,7 +715,7 @@
                                     <img src="assets/img/blog/post3.jpg" alt="">
                                 </div>
                                 <div class="post__text">
-                                    <p class="recent-title"><a href="blog-details.html">How To Create A Custom React Hook To Fetch</a>
+                                    <p class="recent-title"><a href="blog-details.html">Tips to Build a Strong Nursing Profile on Pro Nurse Care Platform</a>
                                     </p>
                                     <span><i class="far fa-calendar-alt"></i> 25 DEC 2024</span>
                                 </div>
