@@ -42,7 +42,6 @@
 body {
   font-family: "Questrial", serif;
   font-size: 15px;
-  line-height: 28px;
   font-weight: 400;
   font-style: normal;
   color: #716ca2;
@@ -107,7 +106,6 @@ h5,
 h6 {
   font-family: "Questrial", serif;
   color: #275495e0;
-  line-height: 1.1;
   margin-top: 0px;
   font-style: normal;
   font-weight: 800;
@@ -159,7 +157,6 @@ li {
 p {
   font-size: 15px;
   font-weight: 400;
-  line-height: 28px;
     font-family: "Questrial", serif;
   color: #716ca2;
   margin-bottom: 0;
@@ -223,6 +220,51 @@ label {
   position: absolute;
 }
 
+
+.slider____section{
+  background: url('../img/banner.jpg');
+  width: 100%;
+  min-height: 90vh;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.slider____section::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.226);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider____section .txt_content{
+  height: 100%;
+  display: flex;
+  z-index: 11;
+  margin-top: 180px;
+  justify-content: center;
+  margin-left: -10px;
+  flex-direction: column;
+}
+.slider____section .txt_content >*{
+  width: fit-content;
+}
+.slider____section .txt_content a{
+  margin-top: 20px;
+}
+.slider____section .txt_content h1{
+  color: white;
+  font-size: 45px;
+}
+.h__100{
+  height: 100%;
+  min-height: 100%;
+}
 /*--
     - Common Classes
 -----------------------------------------*/
@@ -274,7 +316,7 @@ label {
 }
 
 .theme-bg-soft2 {
-  background: #3e68a3;
+  background: white;
 }
 
 .theme-bg2 {
@@ -304,7 +346,6 @@ label {
   background: #275495;
   font-size: 15px;
   font-weight: 700;
-  line-height: 1;
     font-family: "Questrial", serif;
   padding: 20px 38px 20px 38px;
   display: inline-block;
@@ -319,7 +360,6 @@ label {
 }
 .theme_btn i {
   font-size: 15px;
-  line-height: 1;
   margin-left: 5px;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
@@ -377,7 +417,6 @@ section-title
   color: #6a6a6a;
   font-size: 15px;
     font-family: "Questrial", serif;
-  line-height: 1.1;
   font-weight: 600;
 }
 .section-title h6 i {
@@ -389,7 +428,6 @@ section-title
 .section-title h2 {
   color: #275495e0;
   font-size: 48px;
-  line-height: 1.2;
   font-weight: 600;
     font-family: "Questrial", serif;
 
@@ -416,7 +454,6 @@ section-title
   border: 2px solid rgba(255, 255, 255, 0.251);
   border-radius: 50%;
   font-size: 14px;
-  line-height: 50px;
   display: inline-block;
   width: 56px;
   height: 56px;
@@ -1797,7 +1834,6 @@ section-title
   right: 50px;
   bottom: 50px;
   border-radius: 10px;
-  line-height: 50px;
   text-align: center;
 }
 #scrollUp i {
@@ -2070,7 +2106,6 @@ section-title
 .top-cta span {
   color: white;
   font-size: 14px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 600;
   margin-right: 11px;
@@ -2095,7 +2130,6 @@ section-title
   font-size: 15px;
     font-family: "Questrial", serif;
   font-weight: 600;
-  line-height: 1;
   display: inline-block;
 }
 
@@ -2154,13 +2188,13 @@ section-title
 }
 .main-menu ul li > a {
   color: #275495e0;
-  font-size: 16px;
-  line-height: 1;
+  font-size: 18px;
+  height: 100%;
     font-family: "Questrial", serif;
-  padding: 40px 0;
+  padding: 45px 0 40px;
   display: inline-block;
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
 }
 .main-menu ul li > a i {
   font-size: 12px;
@@ -2169,10 +2203,10 @@ section-title
   font-size: 10px;
 }
 .main-menu ul li > a.active {
-  color: white;
+  color: #1e3f6d;
 }
 .main-menu ul li:hover > a {
-  color: rgb(235, 235, 235);
+  color: #275495;
 }
 .main-menu ul li:hover > a::before {
   right: 0;
@@ -2225,7 +2259,6 @@ section-title
 .header-lang__icon span {
   color: #275495e0;
   font-size: 16px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 700;
   border: 2px solid gainsboro;
@@ -2372,7 +2405,6 @@ section-title
 .hamburger-menu-02 .menu-text {
   color: white;
   font-size: 20px;
-  line-height: 1;
     font-family: "Questrial", serif;
 
   font-weight: 400;
@@ -2561,9 +2593,7 @@ section-title
     margin-right: 30px;
   }
 }
-.main-menu-03 ul li > a {
-  padding: 35px 0 38px 0;
-}
+
 
 @media only screen and (min-width: 1601px) and (max-width: 1920px) {
   .hamburger-menu-03 {
@@ -2689,7 +2719,6 @@ section-title
 .page-title-inner-content .page-title h1 {
   color: white;
   font-size: 65px;
-  line-height: 1;
     font-family: "Questrial", serif;
 
   font-weight: 700;
@@ -2719,7 +2748,6 @@ section-title
   display: inline-block;
   color: white;
   font-size: 24px;
-  line-height: 1.1;
     font-family: "Questrial", serif;
   position: relative;
   padding: 0 7px;
@@ -2753,7 +2781,6 @@ section-title
 .page-title-inner-content ul.breadcrumb-list li a i {
   font-size: 18px;
   margin-left: 8px;
-  line-height: 1;
 }
 
 .contact-title-inner {
@@ -2793,7 +2820,6 @@ section-title
   height: 50px;
   background: #212121;
   text-align: center;
-  line-height: 50px;
   font-size: 20px;
   margin-left: 20px;
   color: #fff;
@@ -3111,7 +3137,6 @@ input.main-search-input:-ms-input-placeholder {
 .slider__content .sub-title {
   color: white;
   font-size: 14px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 700;
   display: inline-block;
@@ -3124,7 +3149,6 @@ input.main-search-input:-ms-input-placeholder {
 .slider__content .main-title {
   color: white;
   font-size: 85px;
-  line-height: 1;
     font-family: "Questrial", serif;
 
   font-weight: 400;
@@ -3143,7 +3167,6 @@ input.main-search-input:-ms-input-placeholder {
 .slider__content h6 {
   color: white;
   font-size: 20px;
-  line-height: 1.3;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -3164,7 +3187,6 @@ input.main-search-input:-ms-input-placeholder {
 .slider-cta span {
   color: white;
   font-size: 14px;
-  line-height: 1.3;
     font-family: "Questrial", serif;
   font-size: 600;
   display: inline-block;
@@ -3187,7 +3209,6 @@ input.main-search-input:-ms-input-placeholder {
   display: inline-block;
   left: 100px;
   text-align: center;
-  line-height: 47px;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -3380,7 +3401,6 @@ input.main-search-input:-ms-input-placeholder {
   color: #275495e0;
   font-size: 70px;
   font-weight: 400;
-  line-height: 1.15;
 }
 @media (max-width: 767px) {
   .slider__content__02 .main-title {
@@ -3567,7 +3587,6 @@ input.main-search-input:-ms-input-placeholder {
   right: 320px;
   font-size: 180px;
   font-family: "PT Serif", serif;
-  line-height: 1;
   font-weight: 700;
   bottom: 100px;
   z-index: 1;
@@ -3727,7 +3746,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .services__content h5 {
   font-size: 24px;
-  line-height: 1.3;
   font-weight: 400;
     font-family: "Questrial", serif;
 
@@ -3790,7 +3808,6 @@ input.main-search-input:-ms-input-placeholder {
   height: 85px;
   display: inline-block;
   text-align: center;
-  line-height: 85px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .services__content--front .services--icon {
@@ -3809,7 +3826,6 @@ input.main-search-input:-ms-input-placeholder {
 .services__content--front .more_btn {
   color: white;
   font-size: 15px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 700;
   display: inline-block;
@@ -3836,7 +3852,6 @@ input.main-search-input:-ms-input-placeholder {
   height: 85px;
   display: inline-block;
   text-align: center;
-  line-height: 85px;
 }
 .services__content--back .services--icon i {
   font-size: 40px;
@@ -3854,14 +3869,12 @@ input.main-search-input:-ms-input-placeholder {
 .counetrs__icon i {
   color: #275495;
   font-size: 15px;
-  line-height: 1;
   display: inline-block;
 }
 .counetrs h1 {
   color: white;
   font-size: 65px;
   font-weight: 400;
-  line-height: 1;
 }
 .counetrs p {
   color: white;
@@ -3941,7 +3954,6 @@ input.main-search-input:-ms-input-placeholder {
 .promotion--btn li .promotion-title {
   color: white;
   font-size: 24px;
-  line-height: 1;
   background: #275495e0;
     font-family: "Questrial", serif;
 
@@ -3981,7 +3993,6 @@ input.main-search-input:-ms-input-placeholder {
 .promotion--btn li .more_btn {
   color: white;
   font-size: 20px;
-  line-height: 1;
   font-weight: 400;
   background: #275495;
   display: inline-block;
@@ -4002,6 +4013,7 @@ input.main-search-input:-ms-input-placeholder {
 .brand-slide .brand-img {
   display: inline-block;
   text-align: center;
+  width: 195px;
 }
 
 .promotion-area-02 {
@@ -4104,7 +4116,6 @@ input.main-search-input:-ms-input-placeholder {
 .more_btn3 {
   color: #275495e0;
   font-size: 15px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 700;
   -webkit-transition: all 0.4s ease-out 0s;
@@ -4118,7 +4129,7 @@ input.main-search-input:-ms-input-placeholder {
 }
 
 .brand-border-02 {
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 0px solid #e1e1e1;
 }
 
 .faq-area {
@@ -4147,7 +4158,6 @@ input.main-search-input:-ms-input-placeholder {
   border-radius: 0;
   color: #275495e0;
   font-size: 18px;
-  line-height: 1.3;
     font-family: "Questrial", serif;
 
   font-weight: 700;
@@ -4185,7 +4195,6 @@ input.main-search-input:-ms-input-placeholder {
   font-family: "Font Awesome 5 pro";
   font-size: 18px;
   color: white;
-  line-height: 1;
   right: 0;
   top: 0;
   display: inline-block;
@@ -4227,7 +4236,6 @@ input.main-search-input:-ms-input-placeholder {
   position: absolute;
   font-family: "Font Awesome 5 pro";
   font-size: 18px;
-  line-height: 1;
   right: 0;
   top: 0;
   display: inline-block;
@@ -4262,7 +4270,6 @@ input.main-search-input:-ms-input-placeholder {
 .card .card-body .accord-list li {
   color: #275495e0;
   font-size: 15px;
-  line-height: 1;
   font-weight: 400;
     font-family: "Questrial", serif;
   margin-bottom: 20px;
@@ -4275,7 +4282,6 @@ input.main-search-input:-ms-input-placeholder {
   font-family: "Font Awesome 5 pro";
   font-size: 18px;
   color: #275495e0;
-  line-height: 1;
   left: 0;
   top: 0;
   z-index: 1;
@@ -4312,7 +4318,6 @@ input.main-search-input:-ms-input-placeholder {
 .service-list li a {
   color: #275495e0;
   font-size: 22px;
-  line-height: 1.3;
     font-family: "Questrial", serif;
 
   font-weight: 700;
@@ -4333,7 +4338,6 @@ input.main-search-input:-ms-input-placeholder {
 .service-list li a span {
   color: white;
   font-size: 26px;
-  line-height: 1;
   background: #e5b097;
   position: absolute;
   padding: 22px 30px;
@@ -4401,7 +4405,6 @@ input.main-search-input:-ms-input-placeholder {
 .contact-title-02 {
   color: white;
   font-size: 30px;
-  line-height: 1;
   font-weight: 700;
 }
 
@@ -4445,7 +4448,6 @@ input.main-search-input:-ms-input-placeholder {
   top: 7px;
   font-family: "Font Awesome 5 pro";
   font-size: 18px;
-  line-height: 1;
   color: #275495;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
@@ -4494,7 +4496,6 @@ input.main-search-input:-ms-input-placeholder {
   color: #275495;
   display: inline-block;
   text-align: center;
-  line-height: 80px;
   border: 0;
 }
 .service-content__thumb .video-area-06:hover {
@@ -4566,7 +4567,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .faq-widget-box h6 {
   font-size: 22px;
-  line-height: 1.3;
   font-weight: 700;
 }
 
@@ -4645,7 +4645,6 @@ input.main-search-input:-ms-input-placeholder {
 .about-text__letter h1 span {
   color: white;
   font-size: 45px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 700;
   display: inline-block;
@@ -4657,14 +4656,12 @@ input.main-search-input:-ms-input-placeholder {
 .author .author__desig .name {
   color: #275495e0;
   font-size: 22px;
-  line-height: 1;
   margin-bottom: 4px;
   font-weight: 700;
 }
 .author .author__desig .designation {
   color: #275495;
   font-size: 14px;
-  line-height: 1.2;
     font-family: "Questrial", serif;
 }
 
@@ -4802,7 +4799,6 @@ input.main-search-input:-ms-input-placeholder {
 .chart-box .number {
   color: #275495e0;
   font-size: 35px;
-  line-height: 1;
   font-weight: 400;
     font-family: "Questrial", serif;
 
@@ -4818,7 +4814,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .chart-box .chart-title {
   font-size: 18px;
-  line-height: 1.2;
   font-weight: 600;
   display: block;
 }
@@ -4924,7 +4919,6 @@ input.main-search-input:-ms-input-placeholder {
   height: 120px;
   z-index: 1;
   color: #275495;
-  line-height: 110px;
   animation: pulseBig infinite 4s linear;
 }
 .chose-us-area .video-area2 .popup-video2::before {
@@ -4981,7 +4975,6 @@ input.main-search-input:-ms-input-placeholder {
   height: 75px;
   display: inline-block;
   text-align: center;
-  line-height: 70px;
   color: #275495;
   margin-top: 7px;
   -webkit-transition: all 0.4s ease-out 0s;
@@ -5113,7 +5106,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .chose-wrapper-03 .chose-inner-box .chose-box-icon h2 {
   font-size: 40px;
-  line-height: 1;
   font-weight: 600;
     font-family: "Questrial", serif;
   color: white;
@@ -5128,7 +5120,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .skill-bar .progress-title {
   font-size: 18px;
-  line-height: 1;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -5144,7 +5135,6 @@ input.main-search-input:-ms-input-placeholder {
 .skill-bar .progress .progress-bar span {
   color: #275495e0;
   font-size: 18px;
-  line-height: 1;
     font-family: "Questrial", serif;
 
   font-weight: 700;
@@ -5202,7 +5192,6 @@ input.main-search-input:-ms-input-placeholder {
   right: 0;
   margin: 0 auto;
   text-align: center;
-  line-height: 130px;
   font-size: 24px;
   border: 0;
   animation: pulseBig2 infinite 4s linear;
@@ -5217,14 +5206,12 @@ input.main-search-input:-ms-input-placeholder {
 .counter-02 h1 {
   color: white;
   font-size: 50px;
-  line-height: 1;
   font-weight: 700;
   margin-bottom: 18px;
 }
 .counter-02 .semi-title {
   color: white;
   font-weight: 700;
-  line-height: 1;
     font-family: "Questrial", serif;
 
 }
@@ -5296,7 +5283,6 @@ input.main-search-input:-ms-input-placeholder {
 .readmore__content .semi-title {
   color: white;
   font-weight: 700;
-  line-height: 1.2;
     font-family: "Questrial", serif;
 
   margin-bottom: 15px;
@@ -5339,11 +5325,9 @@ input.main-search-input:-ms-input-placeholder {
   width: 55px;
   height: 55px;
   font-size: 18px;
-  line-height: 50px;
 }
 .chose-inner__text .inner-title {
   font-size: 18px;
-  line-height: 1;
   font-weight: 700;
 }
 
@@ -5509,7 +5493,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .project .project-title {
   font-size: 20px;
-  line-height: 1;
   font-weight: 600;
     font-family: "Questrial", serif;
   display: inline-block;
@@ -5566,7 +5549,6 @@ input.main-search-input:-ms-input-placeholder {
 .project__text__back .more_btn2 {
   color: #275495e0;
   font-size: 15px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 700;
   -webkit-transition: all 0.4s ease-out 0s;
@@ -5630,10 +5612,11 @@ input.main-search-input:-ms-input-placeholder {
   border-radius: 50%;
   background: #35c2e11f;
   width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 150px;
-  display: inline-block;
   text-align: center;
-  line-height: 148px;
   position: relative;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
@@ -5741,14 +5724,12 @@ input.main-search-input:-ms-input-placeholder {
   width: 80px;
   height: 80px;
   text-align: center;
-  line-height: 80px;
 }
 .process .semi-title {
     font-family: "Questrial", serif;
 
   font-weight: 700;
   display: inline-block;
-  line-height: 1;
   padding-left: 35px;
   padding-right: 35px;
   -webkit-transition: all 0.4s ease-out 0s;
@@ -5969,7 +5950,6 @@ input.main-search-input:-ms-input-placeholder {
   height: 55px;
   display: inline-block;
   border-radius: 50%;
-  line-height: 55px;
   text-align: center;
   animation: pulseBig3 infinite 1s linear;
 }
@@ -5980,7 +5960,6 @@ input.main-search-input:-ms-input-placeholder {
 .project-02__text__back .project-title {
   color: white;
   font-size: 30px;
-  line-height: 1;
   font-weight: 700;
 }
 @media only screen and (min-width: 1601px) and (max-width: 1800px) {
@@ -6009,7 +5988,6 @@ input.main-search-input:-ms-input-placeholder {
 .project-02__text__back .project-tag {
   color: white;
   font-size: 16px;
-  line-height: 1.2;
   font-weight: 400;
     font-family: "Questrial", serif;
 }
@@ -6048,7 +6026,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .work-02 .shadow-text {
   font-size: 230px;
-  line-height: 1;
   font-weight: 700;
     font-family: "Questrial", serif;
   -webkit-text-fill-color: transparent;
@@ -6065,12 +6042,10 @@ input.main-search-input:-ms-input-placeholder {
 .work-02 .work-title {
   font-size: 30px;
   font-weight: 400;
-  line-height: 1.3;
 }
 .work-02 .more-btn3 {
   color: #275495e0;
   font-size: 15px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 700;
   display: inline-block;
@@ -6092,7 +6067,6 @@ input.main-search-input:-ms-input-placeholder {
   outline: none;
   color: #275495e0;
   font-size: 18px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 600;
   display: inline-block;
@@ -6247,7 +6221,6 @@ input.main-search-input:-ms-input-placeholder {
 
 .semi-title {
   font-size: 24px;
-  line-height: 1.3;
     font-family: "Questrial", serif;
   font-weight: 400;
 }
@@ -6255,12 +6228,10 @@ input.main-search-input:-ms-input-placeholder {
 .testimonial-author .semi-title {
     font-family: "Questrial", serif;
 
-  line-height: 1;
 }
 .testimonial-author .desig {
   color: #275495e0;
   font-size: 15px;
-  line-height: 1.1;
     font-family: "Questrial", serif;
   font-weight: 600;
   display: inline-block;
@@ -6324,7 +6295,6 @@ input.main-search-input:-ms-input-placeholder {
     font-family: "Questrial", serif;
 
   font-weight: 700;
-  line-height: 1;
 }
 .testimonial-wrapper-02 .testimonial-author .author-content .desig {
   color: white;
@@ -6427,7 +6397,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .testimonial-white .semi-title {
   color: white;
-  line-height: 1.6;
 }
 .testimonial-white .desig {
   color: white;
@@ -6444,7 +6413,6 @@ input.main-search-input:-ms-input-placeholder {
   height: 138px;
 }
 .testimonial-white .testimonial-author .semi-title {
-  line-height: 1;
 }
 
 .testimonial-area-04 {
@@ -6491,7 +6459,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .testimonial-wrapper-04 .testimonial-item .semi-title {
   color: #275495e0;
-  line-height: 1.6;
 }
 @media (max-width: 767px) {
   .testimonial-wrapper-04 .testimonial-item .semi-title {
@@ -6500,7 +6467,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .testimonial-wrapper-04 .testimonial-item .testimonial-author .semi-title {
   color: #275495e0;
-  line-height: 1;
 }
 .testimonial-wrapper-04 .slick-slider button {
   display: none;
@@ -6544,7 +6510,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .events__list--date h1 {
   font-size: 48px;
-  line-height: 1;
   margin-bottom: 5px;
     font-family: "Questrial", serif;
 
@@ -6554,7 +6519,6 @@ input.main-search-input:-ms-input-placeholder {
   color: #275495e0;
     font-family: "Questrial", serif;
 
-  line-height: 1;
   display: inline-block;
   font-weight: 400;
 }
@@ -6566,7 +6530,6 @@ input.main-search-input:-ms-input-placeholder {
   color: #275495e0;
   font-size: 15px;
     font-family: "Questrial", serif;
-  line-height: 1;
   font-weight: 700;
   margin-top: 13px;
   display: inline-block;
@@ -6600,7 +6563,6 @@ input.main-search-input:-ms-input-placeholder {
 .blog__thumb .blog-link {
   color: white;
   font-size: 15px;
-  line-height: 1;
   background: #275495e0;
   padding: 13px 17px;
   display: inline-block;
@@ -6631,7 +6593,6 @@ input.main-search-input:-ms-input-placeholder {
 .blog__content .blog-date {
   color: #6a6a6a;
   font-size: 13px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -6639,7 +6600,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .blog__content .blog-title {
   font-size: 22px;
-  line-height: 1.3;
   font-weight: 400;
 }
 .blog:hover {
@@ -6701,7 +6661,6 @@ input.main-search-input:-ms-input-placeholder {
 .events-02 .event-date {
   color: #275495e0;
   font-size: 15px;
-  line-height: 1;
     font-family: "Questrial", serif;
 
   font-weight: 400;
@@ -6714,7 +6673,6 @@ input.main-search-input:-ms-input-placeholder {
 
 .details-title {
   font-size: 40px;
-  line-height: 1.1;
   font-weight: 700;
 }
 
@@ -6755,12 +6713,10 @@ input.main-search-input:-ms-input-placeholder {
   font-size: 17px;
     font-family: "Questrial", serif;
   font-weight: 600;
-  line-height: 1.1;
   display: inline-block;
 }
 .events-03__times h6 {
   font-size: 20px;
-  line-height: 1;
   font-weight: 700;
 }
 
@@ -6778,7 +6734,6 @@ input.main-search-input:-ms-input-placeholder {
   width: 35px;
   height: 35px;
   text-align: center;
-  line-height: 30px;
   border-radius: 50%;
   left: 0;
   top: 0;
@@ -6838,7 +6793,6 @@ input.main-search-input:-ms-input-placeholder {
   border-left: 5px solid #275495;
   color: #275495e0;
   font-size: 18px;
-  line-height: 1;
     font-family: "Questrial", serif;
 
   font-weight: 400;
@@ -7032,7 +6986,6 @@ input.main-search-input:-ms-input-placeholder {
   z-index: 1;
   display: inline-block;
   text-align: center;
-  line-height: 75px;
   font-size: 30px;
   cursor: pointer;
 }
@@ -7092,7 +7045,6 @@ input.main-search-input:-ms-input-placeholder {
 .counetr-03 h1 {
   color: #275495;
   font-size: 55px;
-  line-height: 1;
   font-weight: 400;
     font-family: "Questrial", serif;
 
@@ -7113,7 +7065,6 @@ input.main-search-input:-ms-input-placeholder {
   font-weight: 700;
     font-family: "Questrial", serif;
 
-  line-height: 1;
 }
 .counetr-03__content p {
   color: #275495e0;
@@ -7126,7 +7077,6 @@ input.main-search-input:-ms-input-placeholder {
   color: white;
   background: #275495;
   font-size: 40px;
-  line-height: 1;
   font-weight: 700;
   padding: 25px 55px;
   margin-bottom: 45px;
@@ -7260,7 +7210,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .contact__text span {
   font-size: 15px;
-  line-height: 1;
   font-weight: 600;
     font-family: "Questrial", serif;
   display: block;
@@ -7268,7 +7217,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .contact .shadow-text {
   font-size: 200px;
-  line-height: 1;
   font-weight: 700;
     font-family: "Questrial", serif;
 
@@ -7411,10 +7359,8 @@ input.main-search-input:-ms-input-placeholder {
   right: 25px;
   color: white;
   font-size: 20px;
-  line-height: 1;
   background: #275495;
   text-align: center;
-  line-height: 65px;
   width: 65px;
   height: 66px;
   display: inline-block;
@@ -7458,7 +7404,6 @@ input.main-search-input:-ms-input-placeholder {
   font-weight: 700;
     font-family: "Questrial", serif;
 
-  line-height: 1.3;
 }
 .helps__content p {
   font-weight: 600;
@@ -7583,7 +7528,6 @@ input.main-search-input:-ms-input-placeholder {
 .cart-plus-minus input {
   color: #275495;
   font-size: 30px;
-  line-height: 1.1;
     font-family: "Questrial", serif;
 
   font-weight: 700;
@@ -7598,7 +7542,6 @@ input.main-search-input:-ms-input-placeholder {
 .cart-plus-minus .qtybutton {
   color: #275495e0;
   font-size: 25px;
-  line-height: 1;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -7684,7 +7627,6 @@ input.main-search-input:-ms-input-placeholder {
   font-size: 15px;
     font-family: "Questrial", serif;
   font-weight: 600;
-  line-height: 1;
 }
 .donate-bar .progress {
   background: #454076;
@@ -7697,7 +7639,6 @@ input.main-search-input:-ms-input-placeholder {
   font-size: 15px;
     font-family: "Questrial", serif;
   font-weight: 600;
-  line-height: 1;
   margin-left: 260px;
 }
 @media (max-width: 767px) {
@@ -7717,7 +7658,6 @@ input.main-search-input:-ms-input-placeholder {
 .singles-list__icon span {
   color: white;
   font-size: 48px;
-  line-height: 1;
     font-family: "Questrial", serif;
 
   font-weight: 400;
@@ -7752,7 +7692,6 @@ input.main-search-input:-ms-input-placeholder {
   height: 35px;
   border-radius: 50%;
   text-align: center;
-  line-height: 35px;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -7886,12 +7825,10 @@ input.main-search-input:-ms-input-placeholder {
 }
 .doantion-widget-list li a {
   font-size: 15px;
-  line-height: 1.3;
   font-weight: 600;
 }
 .doantion-widget-list li a i {
   font-size: 25px;
-  line-height: 1;
 }
 .doantion-widget-list li:hover {
   color: white;
@@ -7938,7 +7875,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .post2 .post__text .recent-title {
   font-size: 18px;
-  line-height: 1.2;
   margin-bottom: 5px;
 }
 .post2 .post__text span {
@@ -8065,7 +8001,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .team__img .t_btn {
   color: white;
-  line-height: 50px;
   font-size: 15px;
   border-radius: 50%;
   background: #275495;
@@ -8091,7 +8026,6 @@ input.main-search-input:-ms-input-placeholder {
   font-weight: 700;
     font-family: "Questrial", serif;
 
-  line-height: 1.2;
 }
 .team__content p {
   font-weight: 600;
@@ -8134,7 +8068,6 @@ input.main-search-input:-ms-input-placeholder {
 .volunteers__description span {
   color: #716ca2;
   font-size: 14px;
-  line-height: 1;
   font-weight: 400;
     font-family: "Questrial", serif;
   display: inline-block;
@@ -8142,7 +8075,6 @@ input.main-search-input:-ms-input-placeholder {
 .volunteers__social a {
   color: #275495e0;
   font-size: 14px;
-  line-height: 35px;
   border-radius: 50%;
   background: #efefef;
   width: 35px;
@@ -8167,7 +8099,6 @@ input.main-search-input:-ms-input-placeholder {
 .blogs-03 .care-tag {
   color: white;
   font-size: 13px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 700;
   background: #275495;
@@ -8204,7 +8135,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .blogs-03__content--meta span {
   font-size: 15px;
-  line-height: 1;
   font-weight: 600;
     font-family: "Questrial", serif;
   display: inline-block;
@@ -8219,7 +8149,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .blogs-03__content .blog-title {
   font-size: 20px;
-  line-height: 1.2;
   font-weight: 700;
 }
 .blogs-03__content .more_btn3 i {
@@ -8270,7 +8199,6 @@ input.main-search-input:-ms-input-placeholder {
   border: 2px solid #e4e4e4;
   border-radius: 50%;
   text-align: center;
-  line-height: 51px;
   color: #275495e0;
   font-size: 18px;
     font-family: "Questrial", serif;
@@ -8318,7 +8246,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .blogs-04__content .blog-title {
   font-size: 30px;
-  line-height: 1.3;
   font-weight: 700;
 }
 .blogs-04:hover .blogs-04__thumb img {
@@ -8333,7 +8260,6 @@ input.main-search-input:-ms-input-placeholder {
   color: #275495;
   border-radius: 50%;
   background-color: rgba(229, 170, 143, 0.149);
-  line-height: 45px;
   text-align: center;
   width: 45px;
   height: 45px;
@@ -8341,14 +8267,12 @@ input.main-search-input:-ms-input-placeholder {
 }
 .posts-author__content span {
   font-size: 13px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 600;
   display: inline-block;
 }
 .posts-author__content h6 {
   font-size: 14px;
-  line-height: 1;
   font-weight: 700;
 }
 
@@ -8400,7 +8324,6 @@ input.main-search-input:-ms-input-placeholder {
 .blog-tags .tag_btn {
   color: #275495e0;
   font-size: 14px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 600;
   background-color: white;
@@ -8438,13 +8361,11 @@ input.main-search-input:-ms-input-placeholder {
 .quote-text .quote-title {
   color: white;
   font-size: 30px;
-  line-height: 1.1;
   font-weight: 400;
 }
 .quote-text .quote-name {
   color: white;
   font-size: 18px;
-  line-height: 1.2;
     font-family: "Questrial", serif;
   font-weight: 600;
 }
@@ -8455,7 +8376,6 @@ input.main-search-input:-ms-input-placeholder {
 
 .blog-details-title {
   font-size: 30px;
-  line-height: 1;
   font-weight: 700;
 }
 
@@ -8476,7 +8396,6 @@ input.main-search-input:-ms-input-placeholder {
 .taglist span {
   color: #275495e0;
   font-size: 15px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 700;
   margin-right: 15px;
@@ -8489,7 +8408,6 @@ input.main-search-input:-ms-input-placeholder {
 .taglist .tag_btn {
   color: #275495e0;
   font-size: 14px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 600;
   background-color: #35c2e11f;
@@ -8518,7 +8436,6 @@ input.main-search-input:-ms-input-placeholder {
   border-radius: 50%;
   background-color: #35c2e11f;
   text-align: center;
-  line-height: 35px;
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -8532,7 +8449,6 @@ input.main-search-input:-ms-input-placeholder {
 .blog-author__text h6 {
   font-size: 22px;
   font-weight: 700;
-  line-height: 1;
   margin-bottom: 10px;
 }
 
@@ -8541,7 +8457,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .post-box .post-meta span {
   font-size: 14px;
-  line-height: 1.2;
     font-family: "Questrial", serif;
   font-weight: 600;
 }
@@ -8562,7 +8477,6 @@ input.main-search-input:-ms-input-placeholder {
   top: -25px;
   border-radius: 50%;
   text-align: center;
-  line-height: 50px;
   z-index: 3;
 }
 .scroll-target:hover {
@@ -8599,7 +8513,6 @@ input.main-search-input:-ms-input-placeholder {
   height: 40px;
   font-size: 14px;
   text-align: center;
-  line-height: 40px;
   margin-right: 5px;
 }
 .footer__widget .foter__social a:hover {
@@ -8608,7 +8521,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .footer__widget .semi-title {
   color: white;
-  line-height: 1;
     font-family: "Questrial", serif;
 
 }
@@ -8621,7 +8533,6 @@ input.main-search-input:-ms-input-placeholder {
 .footer__widget .fot-list li a {
   color: white;
   font-size: 15px;
-  line-height: 1.2;
     font-family: "Questrial", serif;
   font-weight: 400;
 }
@@ -8644,7 +8555,6 @@ input.main-search-input:-ms-input-placeholder {
 .bottom-cta span {
   color: #bbb5f1;
   font-size: 15px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 400;
   display: inline-block;
@@ -8653,7 +8563,6 @@ input.main-search-input:-ms-input-placeholder {
 .bottom-cta .bottom_btn {
   font-size: 14px;
   padding: 7px 22px;
-  line-height: 1;
   border: 2px solid #275495;
 }
 .bottom-cta .bottom_btn i {
@@ -8703,18 +8612,15 @@ input.main-search-input:-ms-input-placeholder {
 .contacts__icon {
   background-color: #275495;
   text-align: center;
-  line-height: 40px;
   width: 40px;
   height: 40px;
 }
 .contacts__icon i {
   color: white;
   font-size: 15px;
-  line-height: 1;
 }
 .contacts__text .para-1 {
   font-weight: 700;
-  line-height: 1;
     font-family: "Questrial", serif;
 
 }
@@ -8756,7 +8662,6 @@ input.main-search-input:-ms-input-placeholder {
 .footer__widget .contact-list span {
   color: #275495e0;
   font-size: 15px;
-  line-height: 1.1;
     font-family: "Questrial", serif;
   font-weight: 700;
   display: inline-block;
@@ -8764,7 +8669,6 @@ input.main-search-input:-ms-input-placeholder {
 }
 .footer__widget .contact-list span i {
   font-size: 15px;
-  line-height: 1;
   color: #275495;
   display: inline-block;
   margin-right: 15px;
@@ -8792,7 +8696,6 @@ input.main-search-input:-ms-input-placeholder {
 .post__text .recent-title {
   color: #275495e0;
   font-size: 16px;
-  line-height: 1.4;
     font-family: "Questrial", serif;
 
   font-weight: 700;
@@ -8800,7 +8703,6 @@ input.main-search-input:-ms-input-placeholder {
 .post__text span {
   color: #275495e0;
   font-size: 14px;
-  line-height: 1;
     font-family: "Questrial", serif;
   font-weight: 600;
   display: inline-block;
