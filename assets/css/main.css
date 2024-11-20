@@ -2185,7 +2185,7 @@ section-title
   padding: 2px 0 3px 0;
 }
 .main-header-area .logo-img img {
-  max-width: 100%;
+  max-width: 242px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main-header-area {
