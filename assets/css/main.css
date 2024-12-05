@@ -45,6 +45,8 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #716ca2;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .f-left {
@@ -2660,7 +2662,7 @@ section-title
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   min-height: 575px;
   position: relative;
 }
@@ -5756,6 +5758,8 @@ input.main-search-input:-ms-input-placeholder {
 }
 .process__thumb img {
   width: 100%;
+  height: 262px;
+  object-fit: cover;
 }
 .process__front {
   display: flex;
@@ -6609,6 +6613,8 @@ input.main-search-input:-ms-input-placeholder {
 .blog__thumb--img img {
   display: block;
   width: 100%;
+  height: 250px;
+  object-fit: cover;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -6677,9 +6683,8 @@ input.main-search-input:-ms-input-placeholder {
   position: relative;
 }
 .blogs .blog__thumb .blog-link {
-  bottom: -93%;
-  left: 35px;
-  right: auto;
+  bottom: -70%;
+  right: 15px;
   background: #275495 !important;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -8168,6 +8173,8 @@ input.main-search-input:-ms-input-placeholder {
 }
 .blogs-03 .blogs-03__thumb--img img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
   display: block;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
@@ -8776,3 +8783,98 @@ input.main-search-input:-ms-input-placeholder {
 }
 
 /*# sourceMappingURL=main.css.map */
+.about-company-area .quote{
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  background: #e5e5e573;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.img____box{
+  transition: filter 0.3s ease;
+}
+.img____box .icon__img {
+  width: 100px;
+  transition: filter 0.3s ease;
+}
+
+/* On hover, apply a white filter */
+.img____box:hover .icon__img {
+  filter: brightness(0) invert(1);
+}
+.our_mission_vision{
+  margin: 0px 0px 100px ;
+
+}
+.our_mission_vision .mission__box{
+  display: flex;
+  border: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 15px;
+  min-height: 300px;
+  border-radius: 5px;
+}
+.our_mission_vision .mission__box .img_box{
+  width: 40%;
+}
+.our_mission_vision .mission__box .img_box img{
+  width: 100%;
+}
+.our_mission_vision .mission__box .txt{
+  width: 60%;
+}
+.our_mission_vision .mission__box .txt h6{
+  font-size: 25px;
+}
+.caption{
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.blog_detail .img____box img{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.blog_detail h2{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.blog_detail .text___section p{
+  font-size: 16px;
+  margin-top: 0px;
+}
+.blog_detail .text___section h5{
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.blog_detail .text___section h6{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.blog_detail .text___section{
+  margin-bottom: 70px;
+}
+.span__date{
+  font-weight: 700;
+  margin-top: 25px;
+}
+.blog_detail .text___section ul{
+  padding-left: 40px;
+}
+.blog_detail .text___section ul li{
+  list-style: circle;
+  margin-top: 10px;
+}
+.blog_detail .text___section ul li span{
+  font-weight: 600;
+}
